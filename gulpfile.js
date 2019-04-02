@@ -133,6 +133,11 @@ function clean() {
   return del(['.tmp', 'dist'])
 }
 
+function github() {
+  return src('dist/**/*')
+    .pipe($.ghPages());
+}
+
 function measureSize() {
   return src('dist/**/*')
     .pipe($.size({title: 'build', gzip: true}));
@@ -148,6 +153,12 @@ const build = series(
     extras
   ),
   measureSize
+);
+
+const deploy = series(
+  clean,
+  build,
+  github
 );
 
 function startAppServer() {
@@ -215,6 +226,7 @@ if (isDev) {
   serve = series(build, startDistServer);
 }
 
+exports.deploy = deploy;
 exports.serve = serve;
 exports.build = build;
 exports.default = build;

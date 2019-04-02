@@ -1320,7 +1320,7 @@ nav ul ul ul li a {
 .scroll-down-wrap.no-border .section-down-arrow, .slider-down-arrow.no-border {
   border: none !important;
   overflow: visible;
-  text- align: center;
+  text-align: center;
   opacity: 1;
   height: auto;
   bottom: 13px;
