@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 	'use strict';
@@ -22,10 +21,9 @@ $(document).ready(function() {
 	ContactMap();
 });
 
-function getWindowInnerWidth() { return $(window).innerWidth() }
+function getWindowInnerWidth() { return $(window).innerWidth(); }
 
-$(window).on('load', function() {
-});
+$(window).on('load', function() {});
 
 
 /*--------------------------------------------------
@@ -1450,9 +1448,6 @@ Function Contact Map
 			icon: companyImage,
 			title:'Our Office',
 			zIndex: 3});
-		google.maps.event.addListener(companyMarker, 'click', function() {
-			infowindow.open(map,companyMarker);
-		});
 	}
 
 	return false

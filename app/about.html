@@ -24,7 +24,6 @@
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/ico" href="favicon.ico" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link href="styles/font-awesome.min.css" rel="stylesheet" />
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:500,600" rel="stylesheet">
 
@@ -36,6 +35,7 @@
 	<script src="scripts/modernizr.js"></script>
 	<!-- endbuild -->
 	<!-- build:css styles/vendor.css -->
+	<link href="styles/font-awesome.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
 	<!-- endbuild -->
 
@@ -107,19 +107,13 @@
 						<div class="inner">
 
 							<nav>
-								<ul class="main-menu">
-									<li class="mp"><a class="ajax-link menu-link" data-type="page-transition" href="index.html"><span></span>Home</a></li>
-									<li class="mp has-sub"><a href="#"><span></span>Portfolio</a>
-										<ul>
-											<li><a class="ajax-link" data-type="page-transition" href="portfolio.html">Visible Text</a></li>
-											<li><a class="ajax-link" data-type="page-transition" href="portfolio1.html">Black Overlay</a></li>
-										</ul>
-									</li>
-									<li class="mp active"><a class="ajax-link menu-link" data-type="page-transition" href="about.html"><span></span>About</a></li>
-									<li class="mp"><a class="ajax-link menu-link" data-type="page-transition" href="contact.html"><span></span>Contact</a></li>
-								</ul>
-							</nav>
-
+                <ul class="main-menu">
+                  <li class="mp active"><a class="ajax-link menu-link" data-type="page-transition" href="index.html"><span></span>Home</a></li>
+                  <!--<li class="mp active"><a class="ajax-link menu-link" data-type="page-transition" href="portfolio.html"><span></span>Portfolio</a></li>-->
+                  <li class="mp"><a class="ajax-link menu-link" data-type="page-transition" href="about.html"><span></span>About</a></li>
+                  <li class="mp"><a class="ajax-link menu-link" data-type="page-transition" href="contact.html"><span></span>Contact</a></li>
+                </ul>
+              </nav>
 
 						</div>
 					</div>
@@ -222,7 +216,7 @@
 
 								<div class="container">
 
-									<p class="has-animation" data-delay="10">Why to choose our photography?</p>
+									<p class="has-animation" data-delay="10">Why you <em>should</em> choose our photography?</p>
 									<h3 class="has-animation" data-delay="100">Just some of the reasons <br class="destroy">users choose us</h3>
 
 									<hr>
